@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seasonal Workshop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white to-blue-50 text-gray-800 min-h-screen flex flex-col">
+  <!-- Header / Hero -->
+  <header class="bg-gradient-to-r from-green-400 via-teal-400 to-blue-500 text-white py-16 shadow-xl">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="max-w-xl text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold drop-shadow-md">🌿 Seasonal Workshop</h1>
+        <p class="mt-4 text-lg text-white/90">เวิร์กช็อป 3 หมวดหมู่ สุขภาพ งานฝีมือ และการเรียนรู้ หมุนเวียนทุกฤดูกาล</p>
+        <a href="#register" class="mt-6 inline-block bg-white text-green-600 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-green-100 transition">จองที่นั่งวันนี้</a>
+      </div>
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3502/3502635.png"
+        alt="workshop icon"
+        class="w-48 md:w-56 drop-shadow-lg"
+        loading="lazy"
+      />
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="flex-grow">
+    <!-- About / Categories -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">🎯 หมวดหมู่เวิร์กช็อปหลัก</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center border-t-4 border-green-400 hover:scale-105 transition-transform cursor-pointer">
+          <div class="text-5xl mb-3">🥗</div>
+          <h3 class="font-semibold text-xl mb-2">อาหารเพื่อสุขภาพ</h3>
+          <p class="text-sm text-gray-600">เรียนรู้เมนูคลีน ดื่มน้ำสมุนไพร และอาหารดีต่อใจทุกฤดูกาล</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center border-t-4 border-pink-400 hover:scale-105 transition-transform cursor-pointer">
+          <div class="text-5xl mb-3">🎨</div>
+          <h3 class="font-semibold text-xl mb-2">งานฝีมือสร้างสรรค์</h3>
+          <p class="text-sm text-gray-600">วาดภาพ ทำของขวัญ DIY พัฒนาศิลปะในตัวคุณ</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center border-t-4 border-blue-400 hover:scale-105 transition-transform cursor-pointer">
+          <div class="text-5xl mb-3">📚</div>
+          <h3 class="font-semibold text-xl mb-2">เสริมทักษะชีวิต</h3>
+          <p class="text-sm text-gray-600">เรียนรู้เทคนิคใหม่ๆ เช่น Mind Mapping, ใช้แอป, สื่อดิจิทัล</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calendar -->
+    <section class="bg-white py-16 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">📅 ปฏิทินกิจกรรม</h2>
+        <div class="grid gap-6 md:grid-cols-2">
+          <div class="bg-blue-50 p-5 rounded-lg shadow border-l-4 border-blue-400">
+            <p class="font-medium text-lg">🗓️ 15 ม.ค.</p>
+            <p class="text-gray-700">เวิร์กช็อปน้ำผักผลไม้ Detox</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-lg shadow border-l-4 border-green-400">
+            <p class="font-medium text-lg">🗓️ 20 เม.ย.</p>
+            <p class="text-gray-700">งานฝีมือช่อดอกไม้ทรอปิคอล</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-lg shadow border-l-4 border-indigo-400">
+            <p class="font-medium text-lg">🗓️ 10 ก.ค.</p>
+            <p class="text-gray-700">เทคนิคใช้ YouTube เพื่อการเรียนรู้</p>
+          </div>
+          <div class="bg-blue-50 p-5 rounded-lg shadow border-l-4 border-yellow-400">
+            <p class="font-medium text-lg">🗓️ 5 ธ.ค.</p>
+            <p class="text-gray-700">ทำของขวัญปีใหม่และออกแบบ E-Card</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">📸 ภาพตัวอย่างกิจกรรม</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <img
+      src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
+      alt="กิจกรรมอาหารเพื่อสุขภาพ"
+      loading="lazy"
+      class="rounded-xl shadow-md object-cover w-full h-60"
+      onerror="this.onerror=null;this.src='https://via.placeholder.com/400x300?text=Healthy+Food';"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=400&q=80"
+      alt="กิจกรรมงานฝีมือ"
+      loading="lazy"
+      class="rounded-xl shadow-md object-cover w-full h-60"
+      onerror="this.onerror=null;this.src='https://via.placeholder.com/400x300?text=Craft+Workshop';"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
+      alt="กิจกรรมเสริมทักษะ"
+      loading="lazy"
+      class="rounded-xl shadow-md object-cover w-full h-60"
+      onerror="this.onerror=null;this.src='https://via.placeholder.com/400x300?text=Learning+Skills';"
+    />
+  </div>
+</section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="bg-gradient-to-t from-blue-50 to-white py-16 px-6">
+      <div class="max-w-3xl mx-auto text-center md:text-left">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">📞 ติดต่อเรา</h2>
+        <p class="text-gray-600 mb-4">สอบถามข้อมูลเพิ่มเติมหรือร่วมเป็นพาร์ทเนอร์กิจกรรมได้ที่:</p>
+        <ul class="text-gray-700 space-y-3 text-lg">
+          <li>📧 อีเมล: <a href="mailto:info@seasonalworkshop.com" class="text-blue-600 hover:underline">info@seasonalworkshop.com</a></li>
+          <li>📱 โทร: 098-765-4321</li>
+          <li>🌐 Facebook: <a href="https://facebook.com/seasonalworkshop" target="_blank" class="text-blue-600 hover:underline">@seasonalworkshop</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register" class="bg-gradient-to-br from-white to-green-50 py-16 px-6">
+      <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-xl">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">📝 สมัครเข้าร่วมเวิร์กช็อป</h2>
+        <form
+          class="space-y-6"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbxTq7o8_testURL1234567890/exec"
+        >
+          <div>
+            <label class="block text-sm font-medium text-gray-600">ชื่อ-นามสกุล</label>
+            <input
+              type="text"
+              name="fullname"
+              placeholder="เช่น สมชาย ใจดี"
+              class="mt-1 w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-400"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-600">อีเมล</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              class="mt-1 w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-400"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-600">เลือกเวิร์กช็อป</label>
+            <select
+              name="workshop"
+              class="mt-1 w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-400"
+              required
+            >
+              <option value="" disabled selected>-- กรุณาเลือกเวิร์กช็อป --</option>
+              <option>ไตรมาสที่ 1 - สดใสรับต้นปี</option>
+              <option>ไตรมาสที่ 2 - เบาสบายรับหน้าร้อน</option>
+              <option>ไตรมาสที่ 3 - ฝนนี้มีพลังใจ</option>
+              <option>ไตรมาสที่ 4 - อบอุ่นส่งท้ายปี</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-600">ข้อความเพิ่มเติม</label>
+            <textarea
+              name="message"
+              rows="3"
+              class="mt-1 w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-400"
+              placeholder="ถ้ามีข้อมูลเพิ่มเติม กรุณาแจ้งที่นี่"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-green-500 text-white py-3 font-semibold rounded-full hover:bg-green-600 transition shadow"
+          >
+            📨 ส่งคำขอเข้าร่วม
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center text-sm text-gray-500 py-6">
+    © 2025 Seasonal Workshop. All rights reserved.
+  </footer>
+</body>
+</html>
